@@ -1,61 +1,198 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>iPhone vs Android</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(180deg, #000000 0%, #1a1a1a 60%, #2b2b2b 100%);
+      color: #111;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
+
+    .page {
+      background: #ffffff;
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 35px;
+      border-radius: 22px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      margin-bottom: 8px;
+      color: #000;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .winner {
+      background: linear-gradient(135deg, #000000, #333333);
+      color: white;
+      padding: 18px;
+      border-radius: 16px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 35px;
+    }
+
+    .comparison {
       margin-top: 20px;
     }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 10px;
+
+    .row {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 10px;
+      background: #f2f2f2;
+      padding: 16px;
+      border-radius: 14px;
+      margin-bottom: 14px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .row:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .row span {
       text-align: center;
     }
-    th {
-      background: #222;
+
+    .row span:first-child {
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .badges {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #000;
       color: white;
+      padding: 8px 16px;
+      border-radius: 30px;
+      margin: 6px;
+      font-size: 0.9em;
+    }
+
+    h2 {
+      margin-top: 35px;
+      color: #000;
+    }
+
+    ul {
+      line-height: 1.8;
+      margin-top: 10px;
+    }
+
+    .cta {
+      margin-top: 40px;
+      padding: 22px;
+      text-align: center;
+      background: linear-gradient(135deg, #000000, #333333);
+      color: white;
+      border-radius: 18px;
+      font-weight: bold;
+      font-size: 1.05em;
     }
   </style>
 </head>
+
 <body>
 
-<h1>iPhone vs Android</h1>
-<p>This comparison breaks down the main differences to help you decide.</p>
+  <div class="page">
 
-<table>
-  <tr>
-    <th>Feature</th>
-    <th>iPhone</th>
-    <th>Android</th>
-  </tr>
-  <tr>
-    <td>Ease of Use</td>
-    <td>Very simple</td>
-    <td>Highly customizable</td>
-  </tr>
-  <tr>
-    <td>App Selection</td>
-    <td>Excellent</td>
-    <td>Excellent</td>
-  </tr>
-  <tr>
-    <td>Price Range</td>
-    <td>High</td>
-    <td>Low to High</td>
-  </tr>
-</table>
+    <h1>iPhone 🍎 vs Android 🤖</h1>
+    <p class="subtitle">Two mobile ecosystems. Two very different philosophies.</p>
 
-<p><a href="index.html">← Back to Home</a></p>
+    <div class="winner">
+      🏆 Overall Winner: <b>Android</b> — More choice, flexibility, and value for most users
+    </div>
 
-</body>
-</html>
+    <!-- COMPARISON -->
+    <div class="comparison">
+
+      <div class="row">
+        <span>💰 Price Range</span>
+        <span>Premium-focused ($799+)</span>
+        <span>Budget to flagship ($150–$1,200+)</span>
+      </div>
+
+      <div class="row">
+        <span>⚡ Performance</span>
+        <span>Extremely optimized Apple chips</span>
+        <span>Wide range, top-end rivals Apple</span>
+      </div>
+
+      <div class="row">
+        <span>📱 Customization</span>
+        <span>Limited layout & control</span>
+        <span>Deep customization & launchers</span>
+      </div>
+
+      <div class="row">
+        <span>📦 App Ecosystem</span>
+        <span>Strict quality control</span>
+        <span>More freedom, more variety</span>
+      </div>
+
+      <div class="row">
+        <span>🔐 Privacy & Security</span>
+        <span>Strong privacy focus by default</span>
+        <span>Secure, but varies by brand</span>
+      </div>
+
+      <div class="row">
+        <span>🔄 OS Updates</span>
+        <span>Fast & long-term updates</span>
+        <span>Depends on manufacturer</span>
+      </div>
+
+      <div class="row">
+        <span>🔌 Hardware Variety</span>
+        <span>Few models per year</span>
+        <span>Foldables, gaming phones, stylus phones</span>
+      </div>
+
+      <div class="row">
+        <span>🌐 Ecosystem</span>
+        <span>Best with Mac, iPad, Apple Watch</span>
+        <span>Works across brands & platforms</span>
+      </div>
+
+    </div>
+
+    <!-- BADGES -->
+    <div class="badges">
+      <span class="badge">🎨 Customization King</span>
+      <span class="badge">📱 More Choices</span>
+      <span class="badge">💸 Better Value</span>
+    </div>
+
+    <!-- WHO SHOULD CHOOSE -->
+    <h2>Who should choose which?</h2>
+    <ul>
+      <li>✅ Choose <b>iPhone</b> if you want simplicity, long software support, and tight Apple ecosystem integration.</li>
+      <li>✅ Choose <b>Android</b> if you want customization, hardware variety, and options at every price point.</li>
+    </ul>
+
+    <!-- CTA -->
+    <div class="cta">
+      💡 Reality check: Most people don’t switch phones — they switch ecosystems. Choose the one you want to live in.
+    </div>
+
+  </div>
