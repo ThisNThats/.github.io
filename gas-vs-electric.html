@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gas vs Electric Cars</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(180deg, #fff3e0 0%, #ffd180 60%, #ffb74d 100%);
+      color: #111;
+    }
+
+    .page {
+      background: #ffffff;
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 35px;
+      border-radius: 22px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      margin-top: 0;
+      color: #e65100;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .winner {
+      background: linear-gradient(135deg, #e65100, #ff9800);
+      color: white;
+      padding: 18px;
+      border-radius: 16px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 35px;
+    }
+
+    .comparison {
+      margin-top: 20px;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 10px;
+      background: #fff8f0;
+      padding: 16px;
+      border-radius: 14px;
+      margin-bottom: 14px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .row:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .row span {
+      text-align: center;
+    }
+
+    .row span:first-child {
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .badges {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e65100;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 30px;
+      margin: 6px;
+      font-size: 0.9em;
+    }
+
+    h2 {
+      margin-top: 35px;
+      color: #e65100;
+    }
+
+    ul {
+      line-height: 1.8;
+      margin-top: 10px;
+    }
+
+    .cta {
+      margin-top: 40px;
+      padding: 22px;
+      text-align: center;
+      background: linear-gradient(135deg, #e65100, #ff9800);
+      color: white;
+      border-radius: 18px;
+      font-weight: bold;
+      font-size: 1.05em;
+    }
+
+    /* BACK TO HOME BUTTON */
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: #e63946; 
+      color: white;
+      border: none;
+      border-radius: 12px;
+      padding: 12px 20px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      margin-top: 40px;
+    }
+
+    .back-btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .back-btn:active {
+      transform: translateY(0px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <h1>Gas ⛽ vs Electric ⚡ Cars</h1>
+    <p class="subtitle">Fuel efficiency, cost, and sustainability compared in detail.</p>
+
+    <div class="winner">
+      🏆 Overall Winner: <b>Electric Cars</b> — Lower long-term cost and environmental impact
+    </div>
+
+    <!-- COMPARISON ROWS -->
+    <div class="comparison">
+
+      <div class="row">
+        <span>💰 Purchase Price</span>
+        <span>$20,000–$50,000+</span>
+        <span>$30,000–$80,000+</span>
+      </div>
+
+      <div class="row">
+        <span>⛽ Fuel / Electricity Cost</span>
+        <span>Gasoline 12–15¢ per mile</span>
+        <span>Electric 3–6¢ per mile</span>
+      </div>
+
+      <div class="row">
+        <span>⚡ Performance</span>
+        <span>Standard acceleration, limited torque</span>
+        <span>Instant torque, fast acceleration</span>
+      </div>
+
+      <div class="row">
+        <span>🔧 Maintenance</span>
+        <span>Oil changes, engine parts, higher long-term cost</span>
+        <span>Few moving parts, lower maintenance</span>
+      </div>
+
+      <div class="row">
+        <span>🌍 Environmental Impact</span>
+        <span>Higher CO₂ emissions</span>
+        <span>Zero tailpipe emissions, renewable energy optional</span>
+      </div>
+
+      <div class="row">
+        <span>⏱️ Range & Refuel</span>
+        <span>300–400 miles per tank, 5 minutes to refill</span>
+        <span>250–350 miles per charge, 30–60 minutes fast charge</span>
+      </div>
+
+      <div class="row">
+        <span>🚗 Vehicle Variety</span>
+        <span>Huge selection across all budgets</span>
+        <span>Increasing variety, more premium models</span>
+      </div>
+
+      <div class="row">
+        <span>💰 Long-Term Cost</span>
+        <span>Higher fuel + maintenance costs</span>
+        <span>Lower running costs, tax incentives in many regions</span>
+      </div>
+
+    </div>
+
+    <!-- BADGES -->
+    <div class="badges">
+      <span class="badge">⚡ Fast & Efficient</span>
+      <span class="badge">🌍 Eco-Friendly</span>
+      <span class="badge">💰 Lower Long-Term Cost</span>
+    </div>
+
+    <!-- WHO SHOULD CHOOSE -->
+    <h2>Who should choose which?</h2>
+    <ul>
+      <li>✅ Choose <b>Gas Cars</b> if you need cheap upfront cost, fast refueling, and widespread availability.</li>
+      <li>✅ Choose <b>Electric Cars</b> if you want lower long-term costs, reduced environmental impact, and instant performance.</li>
+    </ul>
+
+    <!-- CTA -->
+    <div class="cta">
+      💡 Pro Tip: Consider total cost of ownership, not just purchase price, when comparing gas vs electric.
+    </div>
+
+    <!-- BACK BUTTON -->
+    <div style="text-align:center;">
+      <button class="back-btn" onclick="location.href='index.html'">
+        ← Back to Home
+      </button>
+    </div>
+
+  </div>
+
+</body>
+</html>
