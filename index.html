@@ -1,76 +1,202 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>CompareHub</title>
+
   <style>
-    .fancy-divider {
-  height: 20px;
-  background: linear-gradient(
-    90deg,
-    #2ecc71,
-    #3498db,
-    #9b59b6
-  );
-  border-radius: 50px;
-  margin: 40px auto;
-  width: 80%;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
-}
-  body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: linear-gradient(135deg, #2ecc71, #3498db, #9b59b6);
-    margin: 0;
-    padding: 0;
-  }
-  header {
-    background: rgba(0,0,0,0.3);
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-  }
-  .container {
-    padding: 30px;
-    max-width: 900px;
-    margin: auto;
-  }
-  .card {
-    background: white;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 14px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
-  }
-  a {
-    text-decoration: none;
-    color: #5a4bda;
-    font-size: 1.2em;
-  }
-</style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(180deg, #0a1a2f 0%, #102b4f 60%, #1c3f7a 100%);
+      color: #111;
+      display: flex;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 220px;
+      background: #0a1a2f;
+      color: white;
+      padding: 30px 20px;
+      position: fixed;
+      height: 100vh;
+      box-shadow: 5px 0 25px rgba(0,0,0,0.4);
+    }
+
+    .sidebar h2 {
+      margin-top: 0;
+      margin-bottom: 25px;
+      font-size: 1.4em;
+      text-align: center;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(135deg, #102b4f, #1c3f7a);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .nav-link:hover {
+      transform: translateX(6px);
+      background: linear-gradient(135deg, #1c3f7a, #e63946);
+    }
+
+    /* MAIN CONTENT */
+    .main {
+      margin-left: 260px;
+      padding: 50px;
+      max-width: 1100px;
+    }
+
+    .hero {
+      background: white;
+      padding: 40px;
+      border-radius: 22px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+      margin-bottom: 45px;
+    }
+
+    .hero h1 {
+      font-size: 2.8em;
+      margin-top: 0;
+      color: #0a1a2f;
+    }
+
+    .hero p {
+      font-size: 1.1em;
+      color: #444;
+    }
+
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.3);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 6px;
+      width: 100%;
+      background: linear-gradient(90deg, #1c3f7a, #e63946);
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 30px 70px rgba(0,0,0,0.45);
+    }
+
+    .card h3 {
+      margin-top: 12px;
+      color: #0a1a2f;
+    }
+
+    .card p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .emoji {
+      font-size: 2em;
+    }
+
+    footer {
+      margin-top: 60px;
+      color: #ddd;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
+
 <body>
 
-<header>
-  <h1>CompareHub 🔥</h1>
-<p>Side-by-side battles to help you decide ⚔️</p>
-</header>
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h2>📊 Categories</h2>
 
-<div class="container">
-  <div class="card">
-    <a href="iphone-vs-android.html">📱 iPhone vs Android</a>
-    <p>Which smartphone is better for you?</p>
+    <a class="nav-link" href="#">🎮 Gaming</a>
+    <a class="nav-link" href="#">📱 Tech</a>
+    <a class="nav-link" href="#">💻 Computers</a>
+    <a class="nav-link" href="#">🚗 Cars</a>
+    <a class="nav-link" href="#">⚔️ Head-to-Head</a>
   </div>
 
-  <div class="card">
-    <a href="ps5-vs-xbox.html">PS5 vs Xbox Series X</a>
-    <p>Console showdown explained.</p>
+  <!-- MAIN -->
+  <div class="main">
+
+    <!-- HERO -->
+    <div class="hero">
+      <h1>Compare Smarter.</h1>
+      <p>
+        Real comparisons. Clear winners. No fluff.
+        Pick two things — we’ll break them down so you don’t waste your money.
+      </p>
+    </div>
+
+    <!-- CARDS -->
+    <div class="grid">
+
+      <div class="card" onclick="location.href='ps5-vs-xbox.html'">
+        <div class="emoji">🎮</div>
+        <h3>PS5 vs Xbox Series X</h3>
+        <p>
+          Performance, exclusives, value, and long-term ownership compared
+          side-by-side.
+        </p>
+      </div>
+
+      <div class="card" onclick="location.href='iphone-vs-android.html'">
+        <div class="emoji">📱</div>
+        <h3>iPhone vs Android</h3>
+        <p>
+          Two ecosystems. Customization vs simplicity. Which actually fits you?
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">💻</div>
+        <h3>Gaming PC vs Laptop</h3>
+        <p>
+          Raw power vs portability — the real cost over time explained.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="emoji">🚗</div>
+        <h3>Gas vs Electric Cars</h3>
+        <p>
+          Cost, reliability, charging, and long-term ownership breakdown.
+        </p>
+      </div>
+
+    </div>
+
+    <footer>
+      © 2026 CompareHub • Built for smarter choices
+    </footer>
+
   </div>
-</div>
-  <div class="fancy-divider"></div>
 
 </body>
 </html>
