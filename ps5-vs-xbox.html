@@ -1,61 +1,200 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>PS5 vs Xbox Series X</title>
+
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
+      margin: 0;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: linear-gradient(180deg, #0f3d2e 0%, #145a42 60%, #1e7f5c 100%);
+      color: #1a1a1a;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
+
+    .page {
+      background: #ffffff;
+      max-width: 950px;
+      margin: 60px auto;
+      padding: 35px;
+      border-radius: 22px;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.6em;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #555;
+      margin-bottom: 30px;
+    }
+
+    .winner {
+      background: linear-gradient(135deg, #1e7f5c, #145a42);
+      color: white;
+      padding: 18px;
+      border-radius: 16px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1em;
+      margin-bottom: 35px;
+    }
+
+    .comparison {
       margin-top: 20px;
     }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 10px;
+
+    .row {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr 1fr;
+      gap: 10px;
+      background: #f3f6f4;
+      padding: 16px;
+      border-radius: 14px;
+      margin-bottom: 14px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .row:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .row span {
       text-align: center;
     }
-    th {
-      background: #222;
+
+    .row span:first-child {
+      text-align: left;
+      font-weight: 600;
+    }
+
+    .badges {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #1e7f5c;
       color: white;
+      padding: 8px 16px;
+      border-radius: 30px;
+      margin: 6px;
+      font-size: 0.9em;
+    }
+
+    h2 {
+      margin-top: 35px;
+      color: #145a42;
+    }
+
+    ul {
+      line-height: 1.8;
+      margin-top: 10px;
+    }
+
+    .cta {
+      margin-top: 40px;
+      padding: 22px;
+      text-align: center;
+      background: linear-gradient(135deg, #145a42, #1e7f5c);
+      color: white;
+      border-radius: 18px;
+      font-weight: bold;
+      font-size: 1.05em;
     }
   </style>
 </head>
+
 <body>
 
-<h1>PS5 vs Xbox Series X</h1>
-<p>This comparison breaks down the main differences to help you decide.</p>
+  <div class="page">
 
-<table>
-  <tr>
-    <th>Feature</th>
-    <th>iPhone</th>
-    <th>Android</th>
-  </tr>
-  <tr>
-    <td>Ease of Use</td>
-    <td>Very simple</td>
-    <td>Highly customizable</td>
-  </tr>
-  <tr>
-    <td>App Selection</td>
-    <td>Excellent</td>
-    <td>Excellent</td>
-  </tr>
-  <tr>
-    <td>Price Range</td>
-    <td>High</td>
-    <td>Low to High</td>
-  </tr>
-</table>
+    <h1>PS5 🎮 vs Xbox Series X 🟩</h1>
+    <p class="subtitle">Two next-gen giants. One clear choice for different gamers.</p>
 
-<p><a href="index.html">← Back to Home</a></p>
+    <div class="winner">
+      🏆 Overall Winner: <b>Xbox Series X</b> — Best value, power, and long-term flexibility
+    </div>
+
+    <!-- COMPARISON DETAILS -->
+    <div class="comparison">
+
+      <div class="row">
+        <span>💰 Price</span>
+        <span>$499</span>
+        <span>$499</span>
+      </div>
+
+      <div class="row">
+        <span>⚡ Raw Performance</span>
+        <span>10.28 TFLOPs GPU</span>
+        <span>12 TFLOPs GPU (stronger on paper)</span>
+      </div>
+
+      <div class="row">
+        <span>🎮 Exclusive Games</span>
+        <span>God of War, Spider-Man, The Last of Us</span>
+        <span>Halo, Forza, Starfield</span>
+      </div>
+
+      <div class="row">
+        <span>📦 Game Subscription</span>
+        <span>PlayStation Plus (good, limited)</span>
+        <span>Game Pass (huge rotating library)</span>
+      </div>
+
+      <div class="row">
+        <span>💾 Storage Expansion</span>
+        <span>Requires specific NVMe SSDs</span>
+        <span>Simple plug-in expansion card</span>
+      </div>
+
+      <div class="row">
+        <span>🧠 Backwards Compatibility</span>
+        <span>PS4 titles only</span>
+        <span>Xbox One, 360, Original Xbox</span>
+      </div>
+
+      <div class="row">
+        <span>🕹️ Controller Tech</span>
+        <span>Adaptive triggers & haptics (very immersive)</span>
+        <span>Traditional but reliable</span>
+      </div>
+
+      <div class="row">
+        <span>🌐 Ecosystem</span>
+        <span>Strong console focus</span>
+        <span>Xbox + PC + Cloud Gaming</span>
+      </div>
+
+    </div>
+
+    <!-- BADGES -->
+    <div class="badges">
+      <span class="badge">🚀 Best Value</span>
+      <span class="badge">📚 Massive Game Library</span>
+      <span class="badge">☁️ Cloud Gaming</span>
+    </div>
+
+    <!-- WHO SHOULD CHOOSE -->
+    <h2>Who should choose which?</h2>
+    <ul>
+      <li>✅ Choose <b>PS5</b> if you care most about cinematic single-player exclusives and immersive controller features.</li>
+      <li>✅ Choose <b>Xbox Series X</b> if you want the most games for your money, stronger raw power, and PC/cloud flexibility.</li>
+    </ul>
+
+    <!-- CTA -->
+    <div class="cta">
+      💡 Tip: If you plan to buy lots of games, Game Pass alone can save hundreds of dollars per year.
+    </div>
+
+  </div>
 
 </body>
 </html>
